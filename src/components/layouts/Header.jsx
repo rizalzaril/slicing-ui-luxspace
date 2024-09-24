@@ -13,7 +13,7 @@ export default function Header() {
     <div>
       <section className="flex flex-wrap">
         {/* Left section */}
-        <div className="w-full sm:w-1/2 md:w-2/4 p-8    justify-center relative sm:static sm:text-left sm:block hidden text-center">
+        <div className="w-full sm:w-1/2 md:w-2/4 p-8  bg-white   justify-center relative sm:static sm:text-left sm:block hidden text-center">
           {/* Logo */}
           <img
             src={Logo}
@@ -31,7 +31,7 @@ export default function Header() {
               {text}
             </h1>
 
-            <p className="text-lg sm:text-[14px] text-center md:text-[18px] py-4 lg:text-[24px]  ">
+            <p className="text-lg sm:text-[14px] text-center text-slate-900 md:text-[18px] py-4 lg:text-[24px]  ">
               Kami menyediakan furniture berkelas yang membuat ruangan terasa
               homey
             </p>

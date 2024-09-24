@@ -32,7 +32,7 @@ const Category = () => {
   const imgCat = "w-60 rounded-[20px]";
   return (
     <>
-      <section className="mb-24">
+      <section className="mb-24 bg-white">
         <div className="p-12 w-full text-center">
           <h1 className={cateHeader}>Just Arrived</h1>
           <h1 className={cateHeader}>This Summer For You</h1>
