@@ -7,6 +7,7 @@ import LoginPage from "./pages/LoginPage.jsx";
 import RegisterPage from "./pages/Register.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/Home.jsx";
+import Details from "./pages/Details.jsx";
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +21,10 @@ const Router = createBrowserRouter([
   {
     path: "/register",
     element: <RegisterPage />,
+  },
+  {
+    path: "/details",
+    element: <Details />,
   },
 ]);
 createRoot(document.getElementById("root")).render(

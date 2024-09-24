@@ -48,7 +48,7 @@ const Category = () => {
                   alt=""
                 />
                 <a
-                  href="/login"
+                  href="/details"
                   className="absolute inset-0 flex items-center justify-center bg-slate-900 bg-opacity-20 text-white rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300"
                 >
                   <button className="bg-slate-900 text-white">Details</button>

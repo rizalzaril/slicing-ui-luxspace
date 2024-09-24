@@ -7,16 +7,16 @@ const NavMenu = () => {
   return (
     <div className="absolute top-4   p-2 z-10 justify-center items-center flex text-center">
       <ul className="flex flex-wrap p-8 lg:gap-12 md:gap-8 sm:gap-5 justify-center text-center">
-        <NavItem href="/login" className={linkClassName}>
+        <NavItem href="/" className={linkClassName}>
           Showcase
         </NavItem>
-        <NavItem href="/register" className={linkClassName}>
+        <NavItem href="/catalog" className={linkClassName}>
           Catalog
         </NavItem>
-        <NavItem href="#projects" className={linkClassName}>
+        <NavItem href="/delivery" className={linkClassName}>
           Delivery
         </NavItem>
-        <NavItem href="#contact" className={linkClassName}>
+        <NavItem href="/rewards" className={linkClassName}>
           Rewards
         </NavItem>
       </ul>
