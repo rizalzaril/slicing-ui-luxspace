@@ -1,5 +1,5 @@
 import NavItem from "../elements/navItem";
-
+import cartIcon from "../../assets/images/cart.png";
 const NavMenu = () => {
   const linkClassName =
     " font-normal text-white text-[18px]  hover:underline hover:text-slate-900 ";
@@ -18,6 +18,9 @@ const NavMenu = () => {
         </NavItem>
         <NavItem href="/rewards" className={linkClassName}>
           Rewards
+        </NavItem>
+        <NavItem href="/cart" className={linkClassName}>
+          <img src={cartIcon} alt="" />
         </NavItem>
       </ul>
     </div>

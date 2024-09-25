@@ -8,6 +8,8 @@ import RegisterPage from "./pages/Register.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import HomePage from "./pages/Home.jsx";
 import Details from "./pages/Details.jsx";
+import Cart from "./pages/Cart.jsx";
+
 const Router = createBrowserRouter([
   {
     path: "/",
@@ -23,8 +25,12 @@ const Router = createBrowserRouter([
     element: <RegisterPage />,
   },
   {
-    path: "/details",
+    path: "/details/:id",
     element: <Details />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
   },
 ]);
 createRoot(document.getElementById("root")).render(
