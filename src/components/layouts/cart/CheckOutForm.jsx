@@ -115,7 +115,6 @@ const CheckoutForm = () => {
                   alt="Courier 1"
                   className="w-[100px] h-[100px] object-contain rounded-xl peer-checked:border-2 peer-checked:border-blue-500"
                 />
-                <span className="mt-2 text-sm font-medium">Courier 1</span>
               </label>
 
               {/* Courier 2 */}
@@ -131,7 +130,6 @@ const CheckoutForm = () => {
                   alt="Courier 2"
                   className="w-[100px] h-[100px] object-contain rounded-xl peer-checked:border-2 peer-checked:border-blue-500"
                 />
-                <span className="mt-2 text-sm font-medium">Courier 2</span>
               </label>
             </div>
           </div>
@@ -147,12 +145,12 @@ const CheckoutForm = () => {
                 <input
                   type="radio"
                   name="payment-method"
-                  value="credit-card"
+                  value="midtrans"
                   className="hidden peer"
                 />
                 <img
                   src={midtrans}
-                  alt="Credit Card"
+                  alt="Midtrans"
                   className={`${ImgPayments} object-contain`}
                 />
               </label>
