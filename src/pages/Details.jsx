@@ -3,16 +3,19 @@ import SameProduct from "../components/layouts/details/SameProduct";
 import Footer from "../components/layouts/Footer";
 import Navbar from "../components/layouts/Navbar";
 import BreadcrumbsItems from "../components/fragments/BreadCrumbsItem";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const Details = () => {
   return (
-    <div>
-      <Navbar />
-      <BreadcrumbsItems />
-      <Slider />
-      <SameProduct />
-      <Footer />
-    </div>
+    <SpeedInsights>
+      <div>
+        <Navbar />
+        <BreadcrumbsItems />
+        <Slider />
+        <SameProduct />
+        <Footer />
+      </div>
+    </SpeedInsights>
   );
 };
 
