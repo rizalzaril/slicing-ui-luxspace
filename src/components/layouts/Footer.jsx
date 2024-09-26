@@ -8,7 +8,7 @@ const Footer = () => {
   const [isExplorerOpen, setIsExplorerOpen] = useState(false);
 
   const btnStyle =
-    "font-bold text-[22px] bg-transparent focus:outline-none hover:border-none flex justify-between items-center w-full md:w-auto mb-4 md:mb-0";
+    "font-bold text-[22px] bg-transparent text-black focus:outline-none hover:border-none flex justify-between items-center w-full md:w-auto mb-4 md:mb-0";
   const ulStyle = "md:block transition-all duration-300 ml-8";
   const liStyle = "text-[18px] text-slate-600";
 
