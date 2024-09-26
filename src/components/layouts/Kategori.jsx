@@ -110,7 +110,7 @@ const Category = () => {
               ))}
         </Carousel>
 
-        <div className="flex justify-center items-center mt-24 gap-12 mb-24">
+        <div className="flex justify-center items-center mt-24 pb-24 gap-12 ">
           <img src={companyImg1} alt="" />
           <img src={companyImg2} alt="" />
           <img src={companyImg3} alt="" />
