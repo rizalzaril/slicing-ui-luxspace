@@ -60,7 +60,7 @@ const CheckoutForm = () => {
             <input
               type="text"
               id="name"
-              className="w-full border rounded-md p-2 mt-1"
+              className="w-full border text-black bg-white rounded-md p-2 mt-1"
               placeholder="Your name"
             />
           </div>
@@ -71,7 +71,7 @@ const CheckoutForm = () => {
             <input
               type="email"
               id="email"
-              className="w-full border rounded-md p-2 mt-1"
+              className="w-full border text-black bg-white rounded-md p-2 mt-1"
               placeholder="example@gmail.com"
             />
           </div>
@@ -82,7 +82,7 @@ const CheckoutForm = () => {
             <input
               type="text"
               id="address"
-              className="w-full border rounded-md p-2 mt-1"
+              className="w-full border text-black bg-white rounded-md p-2 mt-1"
               placeholder="Your Address"
             />
           </div>
@@ -93,7 +93,7 @@ const CheckoutForm = () => {
             <input
               type="number"
               id="phone"
-              className="w-full border rounded-md p-2 mt-1"
+              className="w-full border focus:border-blue-500 text-black bg-white rounded-md p-2 mt-1"
               placeholder="+6289767676"
             />
           </div>

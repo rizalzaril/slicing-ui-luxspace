@@ -85,7 +85,7 @@ export default function CartItems() {
                         <td className="px-2 py-2">{product.quantity}</td>
                         <td className="px-8 py-2">{item.date.split("T")[0]}</td>
                         <td className="px-8 py-2">
-                          <button>x</button>
+                          <button className="bg-slate-100">x</button>
                         </td>
                       </tr>
                     ))
