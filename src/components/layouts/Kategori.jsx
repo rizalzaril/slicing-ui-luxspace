@@ -51,7 +51,7 @@ const Category = () => {
 
   return (
     <>
-      <section className="mb-24 bg-white">
+      <section className=" bg-white">
         <div className="p-12 w-full text-center">
           <h1 className={cateHeader}>Just Arrived</h1>
           <h1 className={cateHeader}>This Summer For You</h1>
@@ -110,7 +110,7 @@ const Category = () => {
               ))}
         </Carousel>
 
-        <div className="flex justify-center items-center mt-24 gap-12">
+        <div className="flex justify-center items-center mt-24 gap-12 mb-24">
           <img src={companyImg1} alt="" />
           <img src={companyImg2} alt="" />
           <img src={companyImg3} alt="" />
