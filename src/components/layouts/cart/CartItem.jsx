@@ -50,7 +50,7 @@ export default function CartItems() {
               // Show skeleton loader while loading
               <SkeletonLoader />
             ) : (
-              <table className="table-auto w-full text-left border-collapse">
+              <table className="table-auto w-full text-left text-black border-collapse">
                 <thead className="bg-gray-100">
                   <tr className="border-b">
                     <th className="px-2 py-2">Photo</th>
