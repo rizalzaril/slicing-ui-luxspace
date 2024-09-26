@@ -5,7 +5,7 @@ const Breadcrumbs = ({ items }) => {
   const location = useLocation(); // Get the current path
 
   return (
-    <div className="bg-[#F9F9F9]  flex w-full mt-20">
+    <div className="bg-[#F9F9F9]  flex w-full md:mt-20 mt-[70px]">
       <nav className="p-4 ml-24" aria-label="Breadcrumb">
         <ol className="inline-flex items-center space-x-1 md:space-x-3">
           {items.map((item, index) => {
