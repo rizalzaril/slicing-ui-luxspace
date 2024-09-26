@@ -3,7 +3,7 @@ import gambar2 from "../../assets/images/item5.png";
 import gambar3 from "../../assets/images/gambar2.png";
 
 const About = () => {
-  const aboutHeader = "font-semibold text-[32px]";
+  const aboutHeader = "font-semibold text-[32px] text-slate-950";
   const aboutImg =
     "rounded-[25px] transform transition duration-300 hover:scale-105";
 
@@ -25,8 +25,10 @@ const About = () => {
                   alt=""
                 />
                 <div className="absolute z-10 top-12 ml-64">
-                  <h1 className="text-[22px] font-medium">Living Room</h1>
-                  <p>1.000 items</p>
+                  <h1 className="text-[22px] font-medium text-slate-950">
+                    Living Room
+                  </h1>
+                  <p className="text-slate-900">1.000 items</p>
                 </div>
               </div>
               <div className="relative">
@@ -36,8 +38,10 @@ const About = () => {
                   alt=""
                 />
                 <div className="absolute z-10 top-12 ml-64">
-                  <h1 className="text-[22px] font-medium">Children Room</h1>
-                  <p>1.000 items</p>
+                  <h1 className="text-[22px] font-medium text-slate-950">
+                    Children Room
+                  </h1>
+                  <p className="text-slate-900">1.000 items</p>
                 </div>
               </div>
             </div>
