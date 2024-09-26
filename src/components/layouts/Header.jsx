@@ -23,10 +23,10 @@ export default function Header() {
 
           {/* Text and heading */}
           <div className="lg:mt-60 sm:mt-16 md:mt-26 flex flex-col justify-center items-center">
-            <h1 className=" font-bold sm:text-2xl md:text-3xl lg:text-4xl mt-2">
+            <h1 className=" font-bold sm:text-2xl text-slate-950 md:text-3xl lg:text-4xl mt-2">
               The Room
             </h1>
-            <h1 className="font-bold sm:text-2xl md:text-3xl lg:text-4xl mt-2 mb-2">
+            <h1 className="font-bold sm:text-2xl text-slate-950 md:text-3xl lg:text-4xl mt-2 mb-2">
               <Cursor />
               {text}
             </h1>

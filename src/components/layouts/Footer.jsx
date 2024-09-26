@@ -1,77 +1,122 @@
+import { useState } from "react";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa"; // Import arrow icons
 import logo from "../../assets/images/logo.png";
 
 const Footer = () => {
+  const [isOverviewOpen, setIsOverviewOpen] = useState(false);
+  const [isCompanyOpen, setIsCompanyOpen] = useState(false);
+  const [isExplorerOpen, setIsExplorerOpen] = useState(false);
+
+  const btnStyle =
+    "font-bold text-[22px] bg-white focus:outline-none hover:border-none flex justify-between items-center w-full md:w-auto mb-4 md:mb-0";
+  const ulStyle = "md:block transition-all duration-300 ml-8";
+  const liStyle = "text-[18px] text-slate-600";
+
   return (
     <div>
       <footer className="bg-white">
-        <div className="flex justify-center items-center mt-14 mb-14">
-          <img src={logo} alt="" />
+        <div className="flex justify-center items-center md:mt-14 mt-8 md:mb-14 mb-0">
+          <img src={logo} alt="Logo" />
         </div>
 
-        <div className="flex justify-center items-start gap-36 mb-24">
-          <div className="flex flex-col items-start">
-            <h1 className="font-bold text-[22px] mb-4">Overview</h1>
-            <ul>
+        <div></div>
+        <div className="flex flex-col md:flex-row justify-center md:p-0 p-10 items-start gap-0 md:gap-32 mb-24">
+          {/* Overview Section */}
+          <div className="flex flex-col items-start w-full md:w-auto">
+            <button
+              className={btnStyle}
+              onClick={() => setIsOverviewOpen(!isOverviewOpen)}
+            >
+              Overview{" "}
+              <span className="md:hidden ml-2">
+                {isOverviewOpen ? <FaChevronUp /> : <FaChevronDown />}
+              </span>
+            </button>
+            <ul
+              className={`${isOverviewOpen ? "block" : "hidden"} ${ulStyle} `}
+            >
               <li>
-                <a href="http://" className="text-[18px]  text-slate-600">
+                <a href="#" className={liStyle}>
                   Shipping
                 </a>
               </li>
               <li>
-                <a href="http://" className="text-[18px]  text-slate-600">
+                <a href="#" className={liStyle}>
                   Refund
                 </a>
               </li>
               <li>
-                <a href="http://" className="text-[18px]  text-slate-600">
+                <a href="#" className={liStyle}>
                   Promotion
                 </a>
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-start">
-            <h1 className="font-bold text-[22px] mb-4">Company</h1>
-            <ul>
+
+          {/* Company Section */}
+          <div className="flex flex-col items-start w-full md:w-auto">
+            <button
+              className={btnStyle}
+              onClick={() => setIsCompanyOpen(!isCompanyOpen)}
+            >
+              Company{" "}
+              <span className="md:hidden ml-2">
+                {isCompanyOpen ? <FaChevronUp /> : <FaChevronDown />}
+              </span>
+            </button>
+            <ul className={`${isCompanyOpen ? "block" : "hidden"} ${ulStyle}`}>
               <li>
-                <a href="http://" className="text-[18px] text-slate-600">
+                <a href="#" className={liStyle}>
                   About
                 </a>
               </li>
               <li>
-                <a href="http://" className="text-[18px]  text-slate-600">
+                <a href="#" className={liStyle}>
                   Career
                 </a>
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-start">
-            <h1 className="font-bold text-[22px] mb-4">Explorer</h1>
-            <ul>
+
+          {/* Explorer Section */}
+          <div className="flex flex-col items-start w-full md:w-auto">
+            <button
+              className={btnStyle}
+              onClick={() => setIsExplorerOpen(!isExplorerOpen)}
+            >
+              Explorer{" "}
+              <span className="md:hidden ml-2">
+                {isExplorerOpen ? <FaChevronUp /> : <FaChevronDown />}
+              </span>
+            </button>
+            <ul className={`${isExplorerOpen ? "block" : "hidden"} ${ulStyle}`}>
               <li>
-                <a href="http://" className="text-[18px]  text-slate-600">
+                <a href="#" className={liStyle}>
                   Term & Conditions
                 </a>
               </li>
               <li>
-                <a href="http://" className="text-[18px]  text-slate-600">
+                <a href="#" className={liStyle}>
                   Privacy & Policies
                 </a>
               </li>
               <li>
-                <a href="http://" className="text-[18px]  text-slate-600">
+                <a href="#" className={liStyle}>
                   For Developer
                 </a>
               </li>
             </ul>
           </div>
-          <div className="flex flex-col items-start">
+
+          {/* Special Letter Section */}
+          <div className="flex flex-col items-start ml-7 md:mt-4 mt-6 md:ml-0">
             <h1 className="font-bold text-[22px] mb-4">Special Letter</h1>
             <div>
               <form action="">
                 <div className="relative">
                   <input
                     type="text"
-                    className="h-[45px] w-[300px] rounded-[12px] border-none p-4 pr-[60px] bg-[#F9F9F9] focus:outline-none"
+                    className="h-[45px] w-full md:w-[300px] rounded-[12px] border-none p-4 pr-[60px] bg-[#F9F9F9] focus:outline-none"
                     placeholder="Type something..."
                   />
                   <button
