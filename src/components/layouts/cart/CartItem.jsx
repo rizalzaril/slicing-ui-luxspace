@@ -39,25 +39,30 @@ export default function CartItems() {
     0
   );
 
+  const cartListOnDesktop = "md:fixed md:top-[150px]";
+  const cartListOnMobile = "overflow-x-auto";
+
   return (
     <>
-      <div className="flex flex-col lg:flex-row sm:flex-col justify-center gap-24 mt-14 mb-12 p-4 bg-white">
+      <div className="flex flex-col lg:flex-row sm:flex-col justify-center gap-24 md:pt-14 pt-10 md:pb-32 pb-14 p-4 bg-white">
         <div className="flex flex-col items-start w-1/2">
-          <div className="overflow-x-auto fixed top-[150px]">
-            <h1 className="text-[24px] font-medium mb-4">Shopping Cart</h1>
+          <div className={`${cartListOnDesktop} ${cartListOnMobile}`}>
+            <h1 className="text-[24px] font-medium pb-4 md:pt-10 pt-0 text-black">
+              Shopping Cart
+            </h1>
 
             {loading ? (
               // Show skeleton loader while loading
               <SkeletonLoader />
             ) : (
-              <table className="table-auto w-full text-left text-black border-collapse">
+              <table className="table-auto w-full  text-left md:text-[18px] text-[12px] text-black border-collapse">
                 <thead className="bg-gray-100">
                   <tr className="border-b">
-                    <th className="px-2 py-2">Photo</th>
-                    <th className="px-8 py-2">Product</th>
-                    <th className="px-2 py-2">Quantity</th>
-                    <th className="px-8 py-2">Date</th>
-                    <th className="px-8 py-2">Action</th>
+                    <th className=" md:px-2 px-auto py-2">Photo </th>
+                    <th className="md:px-8 px-auto py-2">Product</th>
+                    <th className="md:px-2 px-auto py-2">Quantity</th>
+                    <th className="md:px-8 px-auto py-2">Date</th>
+                    <th className="md:px-8 px-auto py-2">Action</th>
                   </tr>
                 </thead>
                 <tbody>

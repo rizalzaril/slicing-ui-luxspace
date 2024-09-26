@@ -1,22 +1,26 @@
 import NavItem from "../elements/navItem";
 import logoBar from "../../assets/images/logo.png";
-
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
-import { useState } from "react";
-import { useEffect } from "react";
-
+import { useState, useEffect } from "react";
 import cartIcon from "../../assets/images/cart.png";
+import { FaBars, FaTimes } from "react-icons/fa"; // Icons for hamburger and close button
 
 const Navbar = () => {
   const linkItem =
-    "text-slate-900 font-bold text-[18px]  hover:underline font-normal";
+    "text-slate-900 font-bold text-[18px] hover:underline font-normal";
 
   const [loading, setLoading] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false); // State for the menu toggle
 
   useEffect(() => {
-    setTimeout(() => setLoading(false)), 1000;
+    setTimeout(() => setLoading(false), 1000);
   }, []);
+
+  // Function to toggle the menu on mobile
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
   if (loading) {
     return (
@@ -28,11 +32,32 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="p-0 z-10 fixed top-0   bg-white w-full  items-center flex justify-between">
+      <div className="p-0 bg-white w-full items-center flex justify-between fixed top-0 left-0 z-20">
         <a href="/">
-          <img src={logoBar} className="ml-28" alt="" />
+          <img src={logoBar} className="ml-6 sm:ml-28" alt="" />
         </a>
-        <ul className="flex flex-wrap p-8 lg:gap-8 md:gap-8 mr-24 sm:gap-5 justify-center text-center">
+
+        <div className="flex items-center">
+          {/* Hamburger Icon for Mobile */}
+          <button
+            className="text-slate-900 text-3xl md:hidden p-4 mr-6"
+            onClick={toggleMenu}
+          >
+            {isMenuOpen ? <FaTimes /> : <FaBars />}
+          </button>
+
+          {/* Cart Menu on mobile */}
+          <NavItem href="/cart" className="mr-4 md:hidden">
+            <img src={cartIcon} alt="" />
+          </NavItem>
+        </div>
+
+        {/* Navbar Links */}
+        <ul
+          className={`${
+            isMenuOpen ? "flex" : "hidden"
+          } flex-col md:flex-row md:flex p-8 gap-8 md:gap-8 mr-6 sm:mr-24 justify-center text-center absolute md:static top-16 left-0 bg-white w-full md:w-auto md:bg-transparent`}
+        >
           <NavItem href="/login" className={linkItem}>
             Showcase
           </NavItem>
@@ -45,9 +70,6 @@ const Navbar = () => {
           </NavItem>
           <NavItem href="#contact" className={linkItem}>
             Rewards
-          </NavItem>
-          <NavItem href="/cart" className={linkItem}>
-            <img src={cartIcon} alt="" />
           </NavItem>
         </ul>
       </div>

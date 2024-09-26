@@ -50,7 +50,7 @@ const Slider = () => {
   }
 
   return (
-    <div className="mt-24 flex justify-center gap-4 bg-white">
+    <div className="pt-24 pb-24 flex justify-center gap-4 bg-white">
       <div className="flex flex-col items-start space-y-4">
         {/* Displaying only the main product image as a thumbnail */}
         <div className="w-[100px] h-[100px] border flex items-center justify-center overflow-hidden rounded-2xl">

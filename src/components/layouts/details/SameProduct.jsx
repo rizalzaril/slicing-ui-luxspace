@@ -31,13 +31,13 @@ const SameProduct = () => {
     },
   ];
 
-  const aboutHeader = "font-semibold text-[32px]";
+  const aboutHeader = "font-semibold text-black text-[32px]";
   //   const aboutImg =
   //     "rounded-[25px] transform transition duration-300 hover:scale-105";
   return (
-    <div className="flex mt-12 gap-12 justify-center items-start  bg-[#F9F9F9]">
+    <div className="flex pt-12 pb-12 gap-12 justify-center items-start  bg-[#F9F9F9]">
       {/* Left column with header and images */}
-      <div className="flex flex-col items-start py-24">
+      <div className="flex flex-col items-start py-8">
         <div className="mb-6">
           <h1 className={aboutHeader}>Complete Your Room</h1>
           <h1 className={aboutHeader}>With What We Designed </h1>

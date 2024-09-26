@@ -46,8 +46,10 @@ const CheckoutForm = () => {
   }, []);
 
   return (
-    <div className="w-1/4 p-8 bg-[#F9F9F9] rounded-2xl">
-      <h1 className="text-[24px] font-medium mb-4">Shipping Details</h1>
+    <div className="md:w-1/4  p-8 bg-[#F9F9F9] rounded-2xl">
+      <h1 className="text-[24px] font-medium mb-4 text-black">
+        Shipping Details
+      </h1>
       {loading ? (
         // Show skeleton loader while loading
         <SkeletonLoader />

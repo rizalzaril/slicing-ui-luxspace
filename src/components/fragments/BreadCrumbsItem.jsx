@@ -9,11 +9,11 @@ function BreadcrumbsItems() {
   // Define the breadcrumb items based on the location path
   const Items = [
     { label: "Home", href: "/" },
-    location.pathname.includes("details") && {
+    location.pathname.includes(`/details/${id}`) && {
       label: "Details",
       href: `/details/${id}`,
     },
-    location.pathname.includes("cart") && { label: "Cart", href: "/cart" },
+    location.pathname.includes("/cart") && { label: "Cart", href: "/cart" },
   ].filter(Boolean); // Filter out any `false` values (when conditions are not met)
 
   return (

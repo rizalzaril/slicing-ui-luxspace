@@ -19,7 +19,7 @@ const Footer = () => {
       </div>
 
       <div></div>
-      <div className="flex flex-col md:flex-row justify-center md:pb-24 p-10 items-start gap-0 md:gap-32 ">
+      <div className="flex flex-col md:flex-row justify-center md:pb-24 p-10 items-start gap-0 md:gap-20 ">
         {/* Overview Section */}
         <div className="flex flex-col items-start w-full md:w-auto">
           <button
