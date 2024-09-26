@@ -40,7 +40,7 @@ const Navbar = () => {
         <div className="flex items-center">
           {/* Hamburger Icon for Mobile */}
           <button
-            className="text-slate-900 text-3xl md:hidden p-4 mr-6"
+            className="text-slate-900 bg-transparent focus:outline-none hover:border-none text-xl md:hidden p-4 mr-6"
             onClick={toggleMenu}
           >
             {isMenuOpen ? <FaTimes /> : <FaBars />}
@@ -70,6 +70,9 @@ const Navbar = () => {
           </NavItem>
           <NavItem href="#contact" className={linkItem}>
             Rewards
+          </NavItem>
+          <NavItem href="/cart" className={linkItem}>
+            <img src={cartIcon} alt="" />
           </NavItem>
         </ul>
       </div>
